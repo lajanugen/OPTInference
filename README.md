@@ -30,7 +30,6 @@ python convert_opt_original_pytorch_checkpoint_to_pytorch.py --pytorch_dump_fold
 
 ## References
 
-[1]  The jupyter notebook is an adaptation of this colab from HF
+[1]  The jupyter notebook is an adaptation of this [colab](https://colab.research.google.com/drive/14wnxMvD9zsiBQo2FtTpxn6w2cpXCcb-7#scrollTo=MoGXqv_lmVhN&uniqifier=1) from HF
 
-https://colab.research.google.com/drive/14wnxMvD9zsiBQo2FtTpxn6w2cpXCcb-7#scrollTo=MoGXqv_lmVhN&uniqifier=1
-[2] Format conversion script https://github.com/facebookresearch/metaseq/issues/98#issuecomment-1125859328)
+[2] [Format conversion script](https://github.com/facebookresearch/metaseq/issues/98#issuecomment-11258593280)
