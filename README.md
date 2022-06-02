@@ -1,15 +1,15 @@
 
 **Notes**
-- The jupyter notebook OPT175B can be used to run inference on the 175B model (in half precision)
+- The jupyter notebook `OPT175B.ipynb` can be used to run inference on the 175B model (in half precision)
 - This uses model parallelism and splits the model into 9 A100 GPUs
 - The notebook should be runnable on the server after installing the dependencies below
 - The notebook reads model weights from `/home/llajan/OPT-175B-HF`
 
 **Dependencies**
 
-pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
-pip3 install transformers accelerate
-pip3 install ipywidgets jupyterlab
+- pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+- pip3 install transformers accelerate
+- pip3 install ipywidgets jupyterlab
 
 **Other details**
 
