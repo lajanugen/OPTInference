@@ -1,3 +1,5 @@
+This repository details the steps to run inference on Meta's OPT 175B model using the HuggingFace library.
+
 ## Notes
 - The jupyter notebook `OPT175B.ipynb` can be used to run inference on the OPT 175B model
 - This uses model parallelism (splits model into 9 A100 GPUs on internal server)
