@@ -10,6 +10,7 @@ def get_opt_model(weights_path, fp16=False):
     with open(os.path.join(weights_path, 'config.json'), 'r') as f:
         config = json.load(f)
     config["_name_or_path"] = weights_path
+    config["dropout"] = 0.0
     config = OPTConfig(**config)
 
     # Initializes an empty shell with the model. This is instant and does not take any RAM.
