@@ -38,7 +38,7 @@ def get_opt_model(weights_path, fp16=False):
 
     # Without this part, torch complains about tensors being in different devices
     full_model_device_map = {f"model.{k}": v for k, v in device_map.items()}
-    full_model_device_map["lm_head"] = 0
+    full_model_device_map["lm_head"] = device_map["decoder.embed_tokens"]
     dispatch_model(model, device_map=full_model_device_map)
     
-    return model
+    return model, full_model_device_map
